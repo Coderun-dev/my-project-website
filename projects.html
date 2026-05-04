@@ -4,30 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <title>Jiayu Cheng | AI in Education Researcher | University of Pennsylvania</title>
+    <title>Jiayu Cheng | Projects | University of Pennsylvania</title>
     
-    <meta name="description" content="Jiayu Cheng is a Ph.D. student at the University of Pennsylvania (Penn GSE) researching AI in Education, Teacher-AI Collaboration, and Learning Sciences.">
-    <meta name="robots" content="noindex, nofollow"> <script src="https://cdn.tailwindcss.com"></script>
+    <meta name="description" content="Portfolio of Jiayu Cheng, Ph.D. student at UPenn researching AI in Education.">
+    <meta name="robots" content="noindex, nofollow">
     
+    <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
-    
     <script src="https://unpkg.com/lucide@latest"></script>
 
     <style>
         body { font-family: 'Inter', sans-serif; }
-        
-        /* Custom scrollbar */
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: transparent; }
         ::-webkit-scrollbar-thumb { background: #e5e7eb; border-radius: 4px; }
         ::-webkit-scrollbar-thumb:hover { background: #d1d5db; }
-
-        /* Nav Styles */
-        .nav-link.active {
-            color: #011F5B;
-            font-weight: 600;
-            border-bottom: 2px solid #990000;
-        }
 
         .fade-in {
             animation: fadeIn 0.3s ease-in-out;
@@ -73,71 +64,46 @@
         </aside>
 
         <main class="flex-1 w-full">
-            
-            <nav class="flex justify-center md:justify-end gap-8 mb-12 border-b border-gray-100 pb-4 md:border-none md:pb-0">
-                <button onclick="switchTab('about')" id="nav-about" class="nav-link pb-1 text-gray-500 hover:text-[#011F5B] transition-colors">About</button>
-                <button onclick="switchTab('research')" id="nav-research" class="nav-link pb-1 text-gray-500 hover:text-[#011F5B] transition-colors">Research</button>
-                <button onclick="switchTab('projects')" id="nav-projects" class="nav-link pb-1 text-gray-500 hover:text-[#011F5B] transition-colors">Projects</button>
-            </nav>
-
-            <div id="about" class="tab-content fade-in space-y-8">
-                <div class="text-[#011F5B] text-base leading-relaxed space-y-4 text-left">
-                    <p>
-                        I am a second-year PhD student in <strong>Learning Sciences and Technologies at the University of Pennsylvania</strong>, and a <strong>Wonder Lab</strong> Fellow, working with <strong>Dr. Bodong Chen</strong>. 
-                    </p>
-                    <p>
-                        Currently, I am investigating the intersection of <strong>artificial intelligence (AI) and education</strong>, with a focus on how <strong>AI-generated lesson plans</strong> shape teaching and learning. My work examines the <strong>biases embedded in AI-generated content</strong>.
-                    </p>
-                </div>
-            </div>
-
-            <div id="research" class="tab-content hidden fade-in space-y-16">
+            <div id="projects" class="tab-content fade-in space-y-12">
                 <section>
-                    <h2 class="text-2xl font-bold text-[#011F5B] mb-6">Current Research</h2>
-                    <p class="text-[#011F5B]">Explore my publications and ongoing studies in AIED and Knowledge Building.</p>
-                </section>
-            </div>
-
-            <div id="projects" class="tab-content hidden fade-in space-y-12">
-                <section>
-                    <h2 class="text-2xl font-bold text-[#011F5B] mb-6">Coursework & Design Projects</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <h2 class="text-3xl font-bold text-[#011F5B] mb-8">Coursework & Design Projects</h2>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
                         
-                        <div class="group border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all bg-white">
-                            <div class="h-40 bg-blue-50 flex items-center justify-center">
-                                <i data-lucide="book-open" class="w-12 h-12 text-[#011F5B]/30"></i>
+                        <div class="group border border-gray-100 rounded-xl overflow-hidden hover:shadow-xl transition-all bg-white">
+                            <div class="h-48 bg-gray-50 overflow-hidden">
+                                <img src="project-storybook.jpg" alt="Storybook" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://via.placeholder.com/400x200?text=Storybook+Image'">
                             </div>
-                            <div class="p-5">
-                                <h3 onclick="openProjectModal('storybook')" class="font-bold text-[#011F5B] mb-2 cursor-pointer hover:text-[#990000] hover:underline transition-all">Storybook: Chat, Who Made You?</h3>
-                                <p class="text-sm text-gray-600 line-clamp-2">An AI literacy storybook designed for 6-year-old children to understand AI creators.</p>
+                            <div class="p-6">
+                                <h3 onclick="openProjectModal('storybook')" class="text-xl font-bold text-[#011F5B] mb-2 cursor-pointer hover:text-[#990000] transition-colors">Storybook: Chat, Who Made You?</h3>
+                                <p class="text-sm text-gray-600 line-clamp-2">An AI literacy storybook designed for 6-year-old children.</p>
                                 <div class="mt-4">
-                                    <span class="text-xs font-semibold text-[#990000] bg-red-50 px-2 py-1 rounded">Instructional Design</span>
+                                    <span class="text-xs font-semibold text-[#990000] bg-red-50 px-3 py-1 rounded-full">Instructional Design</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="group border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all bg-white">
-                            <div class="h-40 bg-green-50 flex items-center justify-center">
-                                <i data-lucide="layers" class="w-12 h-12 text-[#011F5B]/30"></i>
+                        <div class="group border border-gray-100 rounded-xl overflow-hidden hover:shadow-xl transition-all bg-white">
+                            <div class="h-48 bg-gray-50 overflow-hidden">
+                                <img src="project-markov.jpg" alt="Markov Chain" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://via.placeholder.com/400x200?text=Markov+Chain+Image'">
                             </div>
-                            <div class="p-5">
-                                <h3 onclick="openProjectModal('markov')" class="font-bold text-[#011F5B] mb-2 cursor-pointer hover:text-[#990000] hover:underline transition-all">Markov Chain Activity</h3>
-                                <p class="text-sm text-gray-600 line-clamp-2">A hands-on activity for understanding probabilistic text generation and AI mechanisms.</p>
+                            <div class="p-6">
+                                <h3 onclick="openProjectModal('markov')" class="text-xl font-bold text-[#011F5B] mb-2 cursor-pointer hover:text-[#990000] transition-colors">Markov Chain Activity</h3>
+                                <p class="text-sm text-gray-600 line-clamp-2">A hands-on activity for understanding probabilistic text generation.</p>
                                 <div class="mt-4">
-                                    <span class="text-xs font-semibold text-[#990000] bg-red-50 px-2 py-1 rounded">AI Education</span>
+                                    <span class="text-xs font-semibold text-[#990000] bg-red-50 px-3 py-1 rounded-full">AI Education</span>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="group border border-gray-200 rounded-lg overflow-hidden hover:shadow-lg transition-all bg-white">
-                            <div class="h-40 bg-purple-50 flex items-center justify-center">
-                                <i data-lucide="package" class="w-12 h-12 text-[#011F5B]/30"></i>
+                        <div class="group border border-gray-100 rounded-xl overflow-hidden hover:shadow-xl transition-all bg-white">
+                            <div class="h-48 bg-gray-50 overflow-hidden">
+                                <img src="project-stickerbox.jpg" alt="Stickerbox" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" onerror="this.src='https://via.placeholder.com/400x200?text=Stickerbox+Image'">
                             </div>
-                            <div class="p-5">
-                                <h3 onclick="openProjectModal('stickerbox')" class="font-bold text-[#011F5B] mb-2 cursor-pointer hover:text-[#990000] hover:underline transition-all">Auditable Stickerbox</h3>
-                                <p class="text-sm text-gray-600 line-clamp-2">Exploring transparency and data auditing through physical artifacts and tangible interaction.</p>
+                            <div class="p-6">
+                                <h3 onclick="openProjectModal('stickerbox')" class="text-xl font-bold text-[#011F5B] mb-2 cursor-pointer hover:text-[#990000] transition-colors">Auditable Stickerbox</h3>
+                                <p class="text-sm text-gray-600 line-clamp-2">Exploring transparency and data auditing through physical artifacts.</p>
                                 <div class="mt-4">
-                                    <span class="text-xs font-semibold text-[#990000] bg-red-50 px-2 py-1 rounded">Physical Computing</span>
+                                    <span class="text-xs font-semibold text-[#990000] bg-red-50 px-3 py-1 rounded-full">Physical Computing</span>
                                 </div>
                             </div>
                         </div>
@@ -148,44 +114,36 @@
         </main>
     </div>
 
-    <div id="project-modal" class="fixed inset-0 z-50 hidden bg-gray-900/50 backdrop-blur-sm items-center justify-center p-4" onclick="closeProjectModal(event)">
-        <div class="bg-white rounded-xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto flex flex-col" onclick="event.stopPropagation()">
-            <div class="h-48 sm:h-64 bg-gray-100 relative overflow-hidden flex-shrink-0">
+    <div id="project-modal" class="fixed inset-0 z-50 hidden bg-gray-900/60 backdrop-blur-sm items-center justify-center p-4" onclick="closeProjectModal(event)">
+        <div class="bg-white rounded-2xl shadow-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto flex flex-col" onclick="event.stopPropagation()">
+            <div class="h-64 bg-gray-100 relative overflow-hidden flex-shrink-0">
                 <img id="modal-image" src="" alt="Project Image" class="w-full h-full object-cover">
-                <button onclick="closeProjectModal()" class="absolute top-4 right-4 bg-white/90 p-2 rounded-full hover:bg-white text-gray-800 transition-colors shadow-sm">
-                    <i data-lucide="x" class="w-5 h-5"></i>
+                <button onclick="closeProjectModal()" class="absolute top-4 right-4 bg-white/90 p-2 rounded-full hover:bg-white text-gray-800 transition-colors shadow-lg">
+                    <i data-lucide="x" class="w-6 h-6"></i>
                 </button>
             </div>
-            <div class="p-6 sm:p-8 space-y-4">
-                <h3 id="modal-title" class="text-2xl font-bold text-[#011F5B]"></h3>
-                <div id="modal-content" class="text-gray-600 leading-relaxed space-y-4"></div>
-                <div id="modal-links" class="pt-4 border-t border-gray-100 flex flex-wrap gap-4"></div>
+            <div class="p-8 space-y-6">
+                <h3 id="modal-title" class="text-3xl font-bold text-[#011F5B]"></h3>
+                <div id="modal-content" class="text-gray-600 leading-relaxed text-lg space-y-4"></div>
+                <div id="modal-links" class="pt-6 border-t border-gray-100 flex flex-wrap gap-4"></div>
             </div>
         </div>
     </div>
 
     <script>
-        // Initialize Icons
         lucide.createIcons();
 
-        // Project Data Configuration
         const projectData = {
             'storybook': {
                 title: "Storybook: Chat, Who Made You?",
-                image: "https://images.unsplash.com/photo-1512820790803-83ca734da794?q=80&w=800",
-                description: `
-                    <p>A digital storybook designed for 6-year-old kids to understand the basics of AI creators and interaction. This project aims to simplify complex AI concepts into relatable narratives for young learners.</p>
-                `,
-                links: [
-                    { text: "View Storybook", url: "https://danieljnoh.com/EDUC-5917/chat-who-made-you/" }
-                ]
+                image: "project-storybook.jpg",
+                description: "<p>A digital storybook designed for 6-year-old kids to understand the basics of AI creators and interaction. This project aims to simplify complex AI concepts into relatable narratives for young learners.</p>",
+                links: [{ text: "View Storybook", url: "https://danieljnoh.com/EDUC-5917/chat-who-made-you/" }]
             },
             'markov': {
                 title: "Markov Chain Activity",
-                image: "https://images.unsplash.com/photo-1509228468518-180dd48259b6?q=80&w=800",
-                description: `
-                    <p>Learning materials to help students and teachers understand how Markov Chains work in text generation. Includes a series of hands-on activities that demonstrate probability and pattern recognition.</p>
-                `,
+                image: "project-markov.jpg",
+                description: "<p>Learning materials to help students and teachers understand how Markov Chains work in text generation. Includes a series of hands-on activities that demonstrate probability and pattern recognition.</p>",
                 links: [
                     { text: "Activity Slides", url: "Markov Chain Activity Slides.pdf" },
                     { text: "Teacher Guide", url: "Markov Chain Activity Teacher Guide.pdf" },
@@ -194,10 +152,8 @@
             },
             'stickerbox': {
                 title: "Auditable Stickerbox",
-                image: "https://images.unsplash.com/photo-1586717791821-3f44a563eb4c?q=80&w=800",
-                description: `
-                    <p>A project focusing on data auditability and tangible interaction in educational settings. It uses physical artifacts to help users understand how data is tracked and audited in digital systems.</p>
-                `,
+                image: "project-stickerbox.jpg",
+                description: "<p>A project focusing on data auditability and tangible interaction in educational settings. It uses physical artifacts to help users understand how data is tracked and audited in digital systems.</p>",
                 links: [
                     { text: "Slides", url: "Auditable Stickerbox Slides.pdf" },
                     { text: "Storyboard", url: "Auditable Stickerbox Storyboard.pdf" },
@@ -206,7 +162,6 @@
             }
         };
 
-        // Modal Logic
         function openProjectModal(projectId) {
             const data = projectData[projectId];
             if (!data) return;
@@ -221,8 +176,8 @@
                 const a = document.createElement('a');
                 a.href = link.url;
                 a.target = '_blank';
-                a.className = "flex items-center gap-2 px-4 py-2 bg-[#011F5B] text-white rounded-md hover:bg-[#001236] transition-colors text-sm font-medium";
-                a.innerHTML = `${link.text} <i data-lucide="external-link" class="w-3 h-3"></i>`;
+                a.className = "flex items-center gap-2 px-6 py-3 bg-[#011F5B] text-white rounded-xl hover:bg-[#001236] transition-all text-sm font-bold shadow-md hover:shadow-lg";
+                a.innerHTML = `${link.text} <i data-lucide="external-link" class="w-4 h-4"></i>`;
                 linksContainer.appendChild(a);
             });
             lucide.createIcons();
@@ -240,30 +195,6 @@
             modal.classList.remove('flex');
             document.body.style.overflow = '';
         }
-
-        // Tab Switching Logic
-        function switchTab(tabId) {
-            document.querySelectorAll('.tab-content').forEach(el => {
-                el.classList.add('hidden');
-                el.classList.remove('fade-in');
-            });
-            document.querySelectorAll('.nav-link').forEach(el => {
-                el.classList.remove('active');
-            });
-
-            const selectedTab = document.getElementById(tabId);
-            if(selectedTab) {
-                selectedTab.classList.remove('hidden');
-                void selectedTab.offsetWidth; 
-                selectedTab.classList.add('fade-in');
-            }
-
-            const activeBtn = document.getElementById('nav-' + tabId);
-            if(activeBtn) activeBtn.classList.add('active');
-        }
-
-        // Default Tab
-        switchTab('about');
     </script>
 </body>
 </html>
